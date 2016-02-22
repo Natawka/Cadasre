@@ -14,18 +14,20 @@
 }
 body {
 	font-family: "Helvetica Neue Regular", Arial,sans-serif;
+	margin: 0;
 }
 .wrapper {
 	margin: 0 auto;
 	background-image: url(img/background.png);
 	background-repeat: no-repeat;
+	background-size: cover;
 }
                /* ВЕРХНЕЕ МЕНЮ*/
 .menu {
 	position: relative; /* зачищают границы внутри блока*/
 	overflow: hidden; 
 	background: #074f8d;
-	margin-right: 48px;
+	width: 100%;
 }
 .menu li {
 	float: right; /* делает меню плавающим и выстраивает элементы слева направо, когда они становятся плавающими-родитель перестает их ощущать и видеть-нужно зачистить границы Hidden-ом */
@@ -41,7 +43,7 @@ body {
 	padding: 0 5px;
 }
 .menu ul:last-child{
-	margin-right: 40px;
+	margin-right: 20px;
 }
  .ola a:hover {
 	background: #50afdc; /* Old browsers */
