@@ -45,7 +45,7 @@ body {
 .menu ul:last-child{
 	margin-right: 20px;
 }
- .ola a:hover {
+.ola a:hover {
 	background: #50afdc; /* Old browsers */
     background: -moz-linear-gradient(top, #50afdc 0%, #207cca 100%, #2e7ac4 100%); 
     background: -webkit-linear-gradient(top, #50afdc 0%,#207cca 100%,#2e7ac4 100%); 
@@ -58,7 +58,7 @@ body {
     background: -webkit-linear-gradient(top, #50afdc 0%,#207cca 100%,#2e7ac4 100%); 
     background: linear-gradient(to bottom, #50afdc 0%,#207cca 100%,#2e7ac4 100%); 
 }
-#main a:hover{
+.main a:hover{
 	background: #50afdc; /* Old browsers */
     background: -moz-linear-gradient(top, #50afdc 0%, #207cca 100%, #2e7ac4 100%); 
     background: -webkit-linear-gradient(top, #50afdc 0%,#207cca 100%,#2e7ac4 100%);
@@ -81,17 +81,17 @@ body {
 	margin: 0 auto;
 	height: 615px;
 	width: 560px;
-	background: rgba(91, 91, 91, 0.7); /* Цвет полупрозрачного фона */
+	background: rgba(0, 0, 0, 0.4); /* Цвет полупрозрачного фона */
 }
 .container{
 	 margin-top:200px;
 	 padding-bottom: 200px;
- }
- .hat {
+}
+.hat {
     height: 62px;
     margin: 0 auto;
 	width: 560px;
-	background: rgba(91, 91, 91, 0.7); /* Цвет фона */
+	background: rgba(0, 0, 0, 0.4); /* Цвет фона */
 	margin-bottom: 4px;
 }
 h1 {
@@ -99,44 +99,44 @@ h1 {
 	 font-size: 20px;
 	 text-align: center;
 	 padding-top: 20px;
- }
+}
 
-.logo_f {
-	width: 300px;
-	height: 20px;
-	background: #3a508c;
-	padding: 0 0;
+.link {
+	background: url (img/facebook1.png);
+	display: block;
+	background-repeat: no-repeat;
 }
-.logo_f img{
-	margin-right:30px;
-	margin-left: 25px;
-	padding-top:8px;
-}
-.Log_in span{
+.sendsubmit{
+	background: url(img/facebook.png) no-repeat center left, url(img/click2.png) no-repeat center right ;
+	height:30px;
+	width: 295px;
+	color:#f9ffff;
+	background-color: #3b5798; /* Old browsers */
+    background-color: -moz-linear-gradient(top, #3b5798 0%, #304272 100%); /* FF3.6-15 */
+    background-color: -webkit-linear-gradient(top, #3b5798 0%,#304272 100%); /* Chrome10-25,Safari5.1-6 */
+    background-color: linear-gradient(to bottom, #3b5798 0%,#304272 100%);
+	border:none;
+	border-top: 1px solid #7e8ab4;
+    border-radius: 4px;
+    border-top: 1px solid #7889b5;
+    margin-top: 40px;
+    margin-left: 140px;
+    font-size: 15px;
 	font-weight: bold;
-	text-align: center;
+	height: 40px;
 }
-.facebook a{
-	 text-decoration:none;
-	 color: #f9ffff;
-	 display: inline-block;
-	 border-radius: 4px;
-	 border-top: 1px solid #7889b5;
-	 margin-top: 40px;
-	 margin-left: 140px;
-	 font-size: 16px;
-	 margin-bottom: 10px;
-	 padding-bottom: 20px;
+.sendsubmit:hover{
+	cursor: pointer;
 }
- .OU_lines {
-	  margin-top: 30px;
-	  margin-bottom: 20px;
+.OU_lines {
+	  margin-top: 25px;
+	  margin-bottom: 30px;
 	  margin-left: 145px;
 	  color: #999999;
 }
 hr {
 	width: 121px;
-    border-top: 1px solid #666666;
+    border-top: 1px solid #000000;
     display: inline-block;
     margin: 3px 3px;
 }
@@ -148,16 +148,17 @@ hr {
     background: -webkit-linear-gradient(top, #111010 0%,#111111 100%); 
     background: linear-gradient(to bottom, #111010 0%,#111111 100%); 
 	height: 36px;
+	color: #cccccc;
 	margin-left: 140px;
 	margin-bottom: 16px;
 	padding-left:20px;
 	border: 1px solid #111111;
 }
- .send_me {
+.send_me {
 	margin-left: 140px;	 
 	margin-top: 15px;
 }
- .submit {
+.submit {
 	 width: 150px;
 	 height: 35px;
 	 margin-left: 215px;
@@ -171,11 +172,15 @@ hr {
 	 border-bottom: 1px solid 3686ca;
 	 border-left: 1px solid #519fd9;
 }
- input:focus{
+.fill_in input:focus{
 	background: #1b5288; 
 	box-shadow: 0px 0px 15px 5px rgba(77,135,178,0.83);
+	cursor: pointer;
 }
- .worn p{
+.fill_in input:hover{
+	cursor: pointer;
+}
+.worn p{
 	 color: #cccccc;
 	 text-align: center;
 	 margin-top: 20px;
