@@ -24,49 +24,48 @@ body {
 }
                /* ВЕРХНЕЕ МЕНЮ*/
 .menu {
-	position: relative; /* зачищают границы внутри блока*/
+	position: relative; 
 	overflow: hidden; 
 	background: #074f8d;
 	width: 100%;
 }
 .menu li {
-	float: right; /* делает меню плавающим и выстраивает элементы слева направо, когда они становятся плавающими-родитель перестает их ощущать и видеть-нужно зачистить границы Hidden-ом */
+	float: right; 
 	list-style: none;
-	padding: 0 20px; /* отступ между ссылками*/
 }
 .menu a {
-	line-height: 35px; /* Растягиваем верхнее меню в высоту, высота линии текста*/
-	display: inline-block; /* для кликабельности ссылки, делает строчный блочным элементом*/
+	line-height: 35px; 
+	display: inline-block; 
 	text-decoration: none;
 	font-size: 14px;
 	color: #60b5ed;
-	padding: 0 5px;
+	padding: 0 15px;
 }
 .menu ul:last-child{
 	margin-right: 20px;
 }
 .ola a:hover {
-	background: #50afdc; /* Old browsers */
+	background: #50afdc; 
     background: -moz-linear-gradient(top, #50afdc 0%, #207cca 100%, #2e7ac4 100%); 
     background: -webkit-linear-gradient(top, #50afdc 0%,#207cca 100%,#2e7ac4 100%); 
     background: linear-gradient(to bottom, #50afdc 0%,#207cca 100%,#2e7ac4 100%); 
 	text-decoration: underline;
 }
 .menu .ola:hover{
-	background: #50afdc; /* Old browsers */
+	background: #50afdc; 
     background: -moz-linear-gradient(top, #50afdc 0%, #207cca 100%, #2e7ac4 100%); 
     background: -webkit-linear-gradient(top, #50afdc 0%,#207cca 100%,#2e7ac4 100%); 
     background: linear-gradient(to bottom, #50afdc 0%,#207cca 100%,#2e7ac4 100%); 
 }
 .main a:hover{
-	background: #50afdc; /* Old browsers */
+	background: #50afdc;
     background: -moz-linear-gradient(top, #50afdc 0%, #207cca 100%, #2e7ac4 100%); 
     background: -webkit-linear-gradient(top, #50afdc 0%,#207cca 100%,#2e7ac4 100%);
     background: linear-gradient(to bottom, #50afdc 0%,#207cca 100%,#2e7ac4 100%); 
 	color: #fff;
 }
 .flag a {
-	margin-left:20px; /*расстояние ссылки слева от флажка*/
+	margin-left:25px; 
 }
 .flag {
 	background: url(img/flag.png);
@@ -75,13 +74,15 @@ body {
 }
 .ola, .ola a{
 	color: #ffffff;
+	display:inline-block;
+	padding-left: 10px;
 }
              /* CONTENT*/
 .content {
 	margin: 0 auto;
 	height: 615px;
 	width: 560px;
-	background: rgba(0, 0, 0, 0.4); /* Цвет полупрозрачного фона */
+	background: rgba(0, 0, 0, 0.4); 
 }
 .container{
 	 margin-top:200px;
@@ -91,7 +92,7 @@ body {
     height: 62px;
     margin: 0 auto;
 	width: 560px;
-	background: rgba(0, 0, 0, 0.4); /* Цвет фона */
+	background: rgba(0, 0, 0, 0.4);
 	margin-bottom: 4px;
 }
 h1 {
@@ -111,9 +112,9 @@ h1 {
 	height:30px;
 	width: 295px;
 	color:#f9ffff;
-	background-color: #3b5798; /* Old browsers */
-    background-color: -moz-linear-gradient(top, #3b5798 0%, #304272 100%); /* FF3.6-15 */
-    background-color: -webkit-linear-gradient(top, #3b5798 0%,#304272 100%); /* Chrome10-25,Safari5.1-6 */
+	background-color: #3b5798;
+    background-color: -moz-linear-gradient(top, #3b5798 0%, #304272 100%); 
+    background-color: -webkit-linear-gradient(top, #3b5798 0%,#304272 100%); 
     background-color: linear-gradient(to bottom, #3b5798 0%,#304272 100%);
 	border:none;
 	border-top: 1px solid #7e8ab4;
@@ -143,7 +144,7 @@ hr {
 .fill_in input{
 	width: 276px;
 	font-size: 13px;
-	background: #111010; /* Old browsers */
+	background: #111010; 
     background: -moz-linear-gradient(top, #111010 0%, #111111 100%); 
     background: -webkit-linear-gradient(top, #111010 0%,#111111 100%); 
     background: linear-gradient(to bottom, #111010 0%,#111111 100%); 
@@ -164,7 +165,7 @@ hr {
 	 margin-left: 215px;
 	 margin-top: 22px;
 	 color: #fff;
-	 background: #4faddb; /* Old browsers */
+	 background: #4faddb; 
      background: -moz-linear-gradient(top, #4faddb 0%, #2989d8 100%, #207cca 100%, #3686ca 100%); 
      background: -webkit-linear-gradient(top, #4faddb 0%,#2989d8 100%,#207cca 100%,#3686ca 100%); 
      background: linear-gradient(to bottom, #4faddb 0%,#2989d8 100%,#207cca 100%,#3686ca 100%); 
@@ -174,8 +175,9 @@ hr {
 }
 .fill_in input:focus{
 	background: #1b5288; 
-	box-shadow: 0px 0px 15px 5px rgba(77,135,178,0.83);
+	box-shadow: 0px 0px 3px 3px rgba(77,135,178,0.83);
 	cursor: pointer;
+	border: 1px solid #1b5288;
 }
 .fill_in input:hover{
 	cursor: pointer;
